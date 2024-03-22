@@ -22,7 +22,6 @@ def getint(matrix):
     matrix[matrix == -1] = 0
     matrix = matrix.astype(int)
     arr_reshaped = matrix.reshape(-1, 8)
-    # 将每8个位组合成一个字节，并将结果保存在一个新的数组中
     packed_arr = np.packbits(arr_reshaped, axis=1)
     arr_uint8 = packed_arr.reshape(-1,128//8).astype('uint8')
     return arr_uint8
@@ -108,7 +107,6 @@ def validate(model, pool_size, sim_measure):
     quantizer = faiss.IndexBinaryFlat(128)
     nlist = 300
     index = faiss.IndexBinaryIVF(quantizer, 128, nlist)
-    # 每次查询要搜索的聚类数
     index.nprobe = 50
     index.train(code_vec)
     index.add(code_vec)
