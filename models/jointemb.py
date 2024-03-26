@@ -20,8 +20,8 @@ class JointEmbeder(nn.Module):
         self.margin = config['margin']
         self.hidden=config['n_hidden']
         self.hash_len=config['hash_len']
-        self.code_encoder=nn.Linear(512, self.hash_len)
-        self.desc_encoder = nn.Linear(512, self.hash_len)
+        self.code_encoder=nn.Linear(768, self.hash_len)
+        self.desc_encoder = nn.Linear(768, self.hash_len)
         self.alpha = 1.0
         self.dropout = nn.Dropout(p=0.5)
         self.relu = nn.ReLU(inplace=True)
