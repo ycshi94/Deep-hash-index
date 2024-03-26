@@ -15,7 +15,7 @@ pip install more_itertools
   We provide a small dummy dataset for quick deployment in path './data/github'.  
   To train and test our model:
 
-  1) Download and unzip real dataset from [Google Drive](http://www.google.com).
+  1) Download and unzip real dataset from [Google Drive](https://drive.google.com/file/d/18U6ZBJ5msUyO-O9XcSEYQA1OUKhyF9mu/view?usp=sharing).
      
   3) Replace each file in the path with the corresponding real file. 
 
