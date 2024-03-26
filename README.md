@@ -16,7 +16,7 @@ pip install more_itertools
   To train and test our model:
 
   1) Download and unzip real dataset from Google Drive.
-  
+  Note:
   2) Replace each file in the path with the corresponding real file. 
 
 ## Train Models
