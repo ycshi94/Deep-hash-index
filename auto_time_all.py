@@ -141,7 +141,7 @@ def validate(model, pool_size, sim_measure):
             for m in range(rerank_num):
                 predictv_10.append(code_or[predict[i][m]])
             predictv_10 = np.array(predictv_10).astype('float32')
-            index2 = faiss.IndexFlatL2(512)
+            index2 = faiss.IndexFlatL2(768)
             index2.add(predictv_10)
             _, predict_10 = index2.search(desc_or[i:i + 1], 10)
 
