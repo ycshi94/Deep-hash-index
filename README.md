@@ -15,7 +15,7 @@ pip install more_itertools
   We provide a small dummy dataset for quick deployment in path './data/github'.  
   To train and test our model:
 
-  1) Download and unzip real dataset from [Zenodo](https://drive.google.com/file/d/18U6ZBJ5msUyO-O9XcSEYQA1OUKhyF9mu/view?usp=sharing).
+  1) Download and unzip real dataset from [Zenodo](https://doi.org/10.5281/zenodo.18162157).
      
   3) Replace each file in the path with the corresponding real file. 
 
